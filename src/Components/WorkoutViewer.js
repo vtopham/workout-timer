@@ -5,13 +5,11 @@ import {useState} from "react"
 
 function WorkoutViewer(props) {
     const [exercise, setExercise] = useState("")
-    const {workoutDay, currentWorkout, timer, setTimer} = props
+    const {workoutDay, currentWorkout, timer} = props
 
-    // while (timer < 10) {
-    //     setTimeout(() => {
-    //         setTimer(timer + 1);
-    //     },1000)
-    // }
+   
+    
+    
 
     
     
@@ -22,7 +20,7 @@ function WorkoutViewer(props) {
     
     return (
         <>
-        <p>{`The timer is ${timer}`}</p>
+        <p>{`It has been ${timer} seconds`}</p>
         <ShowExercise exercise = {exercise}/>
         </>
     )
