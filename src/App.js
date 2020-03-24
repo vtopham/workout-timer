@@ -10,6 +10,10 @@ function App() {
   const [workoutDay, setWorkoutDay] = useState(3);
   const [timer, setTimer] = useState(0);
 
+  setTimeout(() => { //rerenders and calls the function again
+    setTimer(timer + 1);
+},1000)
+
   return (
     <div className="App">
       <WorkoutSelector workoutDay = {workoutDay}/>
